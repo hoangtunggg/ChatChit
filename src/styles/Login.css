@@ -1,0 +1,187 @@
+/* Login.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a;
+  color: white;
+  font-size: 20px; /* tăng cỡ chữ cơ bản */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-box {
+  background-color: #132036;
+  padding: 48px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover {
+  background-color: #1d4ed8; /* màu xanh đậm hơn */
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); /* bóng nhẹ */
+  transform: translateY(-1px); /* hiệu ứng nổi */
+}
+
+.input-group {
+  margin-bottom: 24px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.input-group input {
+  width: 93%;
+  padding: 16px;
+  border-radius: 7px;
+  border: 1px solid #3A3F52;
+  background-color: #141c31ff;
+  color: white;
+  font-size: 18px;
+}
+
+.input-group input:hover,
+.input-group input:focus {
+  border-color: #2563EB;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.4);
+  background-color: #1a2135;
+}
+
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot {
+  font-size: 15px;
+  color: #60A5FA;
+  text-decoration: none;
+}
+
+.forgot:hover,
+.register-link a:hover {
+  text-decoration: underline;
+  color: #3b82f6; /* xanh sáng hơn */
+}
+
+
+.login-button {
+  width: 100%;
+  background-color: #2563EB;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+} */
+
+/* .logo-svg {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+} */
+
+
+.divider {
+  text-align: center;
+  margin: 28px 0 18px;
+  font-size: 15px;
+  color: #aaa;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.google-button,
+.facebook-button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2D3446;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.google-button:hover,
+.facebook-button:hover {
+  background-color: #3a4055;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+
+.register-link {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 17px;
+  color: #ccc;
+}
+
+.register-link a {
+  color: #60A5FA;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-button,
+.google-button,
+.facebook-button,
+.input-group input,
+.forgot,
+.register-link a {
+  transition: all 0.2s ease-in-out;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.logo-svg {
+  width: 90px;
+  height: 100px;
+}
+
+.brand-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
