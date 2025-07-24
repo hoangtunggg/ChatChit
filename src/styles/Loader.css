@@ -1,0 +1,38 @@
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-icon {
+  animation: spin 1s linear infinite;
+}
+
+/* Các kích thước */
+.loader-small {
+  font-size: 1rem;
+}
+
+.loader-medium {
+  font-size: 1.5rem;
+}
+
+.loader-large {
+  font-size: 2rem;
+}
+
+/* Margin left cho text */
+.loader-text {
+  margin-left: 0.5rem;
+}
+
+/* Animation quay */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+    

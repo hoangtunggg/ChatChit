@@ -4,6 +4,7 @@
   import Login from './pages/auth/Login';
   import Register from './pages/auth/Register';
   import AboutPage from './components/AboutPage';
+import AppLayout from './components/AppLayout';
 
   export default function App() {
     return (
@@ -12,6 +13,7 @@
         <Route path="/login" element={<Login />}/>
         <Route path="/register" element={<Register />}/>
         <Route path="/about" element={<AboutPage />}/>
+        <Route path="/home" element={<AppLayout />}/>
       </Routes>
     );
   }

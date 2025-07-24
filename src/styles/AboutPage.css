@@ -29,7 +29,7 @@
 }
 
 .brand-name {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   color: white;
   font-family: "Segoe UI", sans-serif;
@@ -45,7 +45,7 @@
 .logo {
   display: block;
   margin: 0 auto 2rem;
-  max-width: 180px;
+  max-width: 230px;
   transition: transform 0.3s ease;
 }
 .logo:hover {
@@ -88,4 +88,36 @@
 .highlight {
   color: #38bdf8;
   font-weight: bold;
+}
+
+.cta-button {
+  width: 60%; 
+  max-width: 250px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: white;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.about-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
 }

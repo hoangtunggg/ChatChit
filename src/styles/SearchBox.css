@@ -1,0 +1,45 @@
+.searchbox-container {
+  position: relative;
+}
+
+.searchbox-input {
+  width: 100%;
+  max-width: 27n 0px; /* Giới hạn chiều rộng tối đa để cân đối */
+  padding: 10px 16px 10px 40px; /* Tăng padding trái để chừa icon tìm kiếm */
+  font-size: 15px;
+  border: 1px solid rgba(200, 200, 200, 0.3);
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  outline: none;
+  transition: border 0.25s ease, background-color 0.25s ease;
+
+  /* Bóng nhẹ hiện đại */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchbox-input:focus {
+  border-color: #4c8eff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.searchbox-icon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  pointer-events: none;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

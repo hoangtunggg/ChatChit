@@ -1,10 +1,14 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { MdOpenInNew } from "react-icons/md";
 import MainContainer from "./MainContainer";
 import "../styles/AboutPage.css";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const AboutPage = () => {
+  const navigate = useNavigate();
+  const handleBackToHome = () => {
+    navigate("/home"); 
+  };
+
   return (
     <MainContainer> 
       <div className="about-container">
@@ -20,11 +24,7 @@ const AboutPage = () => {
         <section className="section">
           <h2 className="section-title">Project Overview</h2>
           <p>
-            Convayto is a real-time chat application built with React.js and
-            Supabase. It provides essential features like user authentication,
-            profile management, and instant messaging. Designed as a learning
-            project, Convayto showcases the core functionalities of modern chat
-            applications while emphasizing clean and efficient code practices.
+            ChatChit is a real-time chat application, provides essential features like user authentication, profile management, and instant messaging. Designed as a learning project, ChatChit showcases the core functionalities of modern chat applications while emphasizing clean and efficient code practices.
           </p>
         </section>
 
@@ -42,6 +42,12 @@ const AboutPage = () => {
               pagination and prefetching.
             </li>
           </ul>
+
+          <div className="about-actions">
+            <button className="cta-button" onClick={handleBackToHome}>
+              Back to home
+            </button>
+          </div>
         </section>
       </div>
     </MainContainer>
