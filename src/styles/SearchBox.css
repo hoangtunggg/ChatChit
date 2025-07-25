@@ -4,7 +4,7 @@
 
 .searchbox-input {
   width: 100%;
-  max-width: 27n 0px; /* Giới hạn chiều rộng tối đa để cân đối */
+  max-width: 270px; /* Giới hạn chiều rộng tối đa để cân đối */
   padding: 10px 16px 10px 40px; /* Tăng padding trái để chừa icon tìm kiếm */
   font-size: 15px;
   border: 1px solid rgba(200, 200, 200, 0.3);
