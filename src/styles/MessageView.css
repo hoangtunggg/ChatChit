@@ -1,0 +1,11 @@
+.message-view-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Sẽ được kế thừa từ .message-area */
+  background-color: #0d1117;
+}
+
+.message-top-bar,
+.message-input-bar {
+  flex-shrink: 0; /* không co lại */
+}

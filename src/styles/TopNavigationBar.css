@@ -1,0 +1,120 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  background-color: #172342ff;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  top: 0;
+  z-index: 100;
+}
+
+/* PHẦN TRÁI: LOGO VÀ TÊN */
+.top-nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-svg {
+  width: 40px;
+  height: 40px;
+  object-fit: contain; /* Đảm bảo logo không bị cắt */
+  display: block;
+}
+
+.brand-name {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffffff;
+}
+
+/* PHẦN PHẢI: ICON VÀ AVATAR */
+.top-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffffff;
+}
+
+/* AVATAR VÀ DROPDOWN */
+.profile-menu {
+  position: relative;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background-color: #1c1c2e;
+  border: 1px solid #2d2d44;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3),
+              0 0 20px rgba(0, 255, 255, 0.15);
+  padding: 10px 0;
+  z-index: 10;
+  min-width: 180px;
+  animation: fadeIn 0.2s ease-in-out;
+  backdrop-filter: blur(6px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.profile-menu:hover .dropdown {
+  display: block;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.dropdown li:hover {
+  background-color: #00ffff33;
+  color: #00ffff;
+  box-shadow: inset 0 0 8px #00ffff44;
+  border-radius: 4px;
+}

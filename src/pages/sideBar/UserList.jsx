@@ -1,6 +1,6 @@
 import ShortTextMessage from "../../components/ShortTextMessage";
 import Loader from "../../components/Loader";
-import UserItem from "../../components/UserItem";
+import UserItem from "./UserItem";
 import mockConversations from "../../data/mockConversations";
 
 function UserList() {

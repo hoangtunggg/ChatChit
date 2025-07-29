@@ -1,6 +1,4 @@
-
-import DefaultView from "../sideBar/DefaultView";
-import "../../styles/LeftSideBar.css";
+import UsersView from "./UsersView"
 
 function LeftSideBar() {
   return (
@@ -8,7 +6,7 @@ function LeftSideBar() {
       <aside
         className="left-sidebar"
       >
-        <DefaultView />
+        <UsersView />
       </aside>
     </div>
   );

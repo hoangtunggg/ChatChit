@@ -1,0 +1,45 @@
+.message-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #111827;
+  padding: 10px 20px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #1e293b;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.profile:hover {
+  background-color: #334155;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2); /* Neon glow */
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  margin-right: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+.fullname {
+  color: #f1f5f9;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.loader {
+  color: #0ea5e9;
+  font-weight: bold;
+}
