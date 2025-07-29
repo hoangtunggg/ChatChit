@@ -1,9 +1,21 @@
 import React from "react";
 import "../styles/UserProfile.css";
+import { FaArrowLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const UserProfile = () => {
+  const navigate = useNavigate();
+    const handleBackToHome = () => {
+      navigate("/"); 
+    };
+
   return (
     <div className="profile-container">
+      {/* Nút quay lại */}
+      <div className="back-button">
+        <FaArrowLeft onClick={handleBackToHome}/>
+      </div>
+
       <div className="cover-photo">
         <img
           src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80"
@@ -14,7 +26,7 @@ const UserProfile = () => {
         <img
           src="https://randomuser.me/api/portraits/men/75.jpg"
           alt="Avatar"
-          className="avatar"
+          className="user-avatar"
         />
         <div className="user-info">
           <h2 className="username">Nguyễn Văn A</h2>
